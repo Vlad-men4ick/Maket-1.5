@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'TT Lakes-Thin';
+    src: url('/fonts/TTLakes-Thin.eot');
+    src: local('TT Lakes Thin'), local('TTLakes-Thin'),
+        url('/fonts/TTLakes-Thin.eot') format('embedded-opentype'),
+        url('/fonts/TTLakes-Thin.woff') format('woff'),
+        url('/fonts/TTLakes-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes-Medium';
+    src: url('/fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('/fonts/TTLakes-Medium.eot') format('embedded-opentype'),
+        url('/fonts/TTLakes-Medium.woff') format('woff'),
+        url('/fonts/TTLakes-Medium.woff') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+span {
+    display: block;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1B1C21;
+
+}
+
+/* -------null list-------- */
+
+.button {
+    width: 40px;
+    height: 40px;
+}
+
+.brands {
+    background: #F2F2F2;
+
+}
+
+.brands__title {
+    height: 80px;
+    background: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.title__text {
+    font-family: 'TT Lakes-Thin';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    padding: 16px 0 0 16px;
+
+}
+
+.brands__swiper {
+    height: 154px;
+    position: relative;
+    box-sizing: border-box;
+    /* width: 100%; */
+    overflow: hidden;
+    padding-top: 16px;
+}
+
+.brands__swiper-item {
+    display: block;
+    width: 238px;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+}
+
+.brands__swiper-link {
+    display: flex;
+    height: 70px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    width: 206px;
+}
+
+
+.brands__swiper-botton {
+    background: url('/image/icons/botton-image.svg') no-repeat;
+}
+
+.show-all {
+    display: none;
+}
+
+
+.brands__swiper-paganation.swiper-pagination {
+    bottom: 34px;
+}
+
+.brands__swiper-paganation .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background: #B5B6BC;
+}
+
+@media(min-width: 768px) {
+    .brands__title {
+        height: 56px;
+    }
+
+    .title__text {
+        padding: 16px 0 0 24px;
+    }
+
+    .brands__swiper {
+        padding-top: 0;
+        height: 160px;
+        margin: 24px 0px 24px 24px;
+    }
+
+    .brands__swiper-show-all {
+        height: auto;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+        margin: 24px 0px 46px 24px;
+    }
+
+    .brands__swiper-list {
+        display: grid;
+        grid-template-columns: 224px 224px 224px;
+        column-gap: 24px;
+        row-gap: 16px;
+    }
+
+    .brands__swiper-item {
+        width: 222px;
+    }
+
+    .show-all {
+        display: block;
+        position: relative;
+        margin-left: 57px;
+        padding-bottom: 34px;
+    }
+
+    .show-all__link {
+        font-family: 'TT Lakes-Medium';
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+    }
+
+    .show-all__link:before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: -22px;
+        height: 24px;
+        width: 24px;
+        background-image: url('/image/icons/show-all.svg');
+        background-repeat: no-repeat;
+    }
+
+    .show-all__link-rotate::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: -22px;
+        height: 11px;
+        width: 8px;
+        background-image: url('/image/icons/show-all.svg');
+        background-repeat: no-repeat;
+        transform: rotate(180deg)
+    }
+
+    .swiper-pagination{
+        display:none;
+    }
+}
+
+
+@media(min-width: 1120px) {
+
+    .title__text {
+        padding: 16px 0 0 32px;
+    }
+
+    .brands__swiper {
+        margin: 24px 0px 24px 32px;
+    }
+
+
+    .brands__swiper-list {
+        display: grid;
+        grid-template-columns: 240px 240px 240px 240px;
+        column-gap: 32px;
+        row-gap: 16px;
+    }
+
+    .brands__swiper-show-all {
+        margin: 24px 0px 46px 32px;
+    }
+}
+
+
+
+
+
