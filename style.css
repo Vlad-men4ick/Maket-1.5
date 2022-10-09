@@ -56,11 +56,6 @@ span {
     border: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #1B1C21;
-
-}
 
 /* -------null list-------- */
 
@@ -71,8 +66,8 @@ a {
 
 .brands {
     background: #F2F2F2;
-
 }
+
 
 .brands__title {
     height: 80px;
@@ -87,14 +82,13 @@ a {
     text-transform: uppercase;
     color: #7E7E82;
     padding: 16px 0 0 16px;
-
 }
 
 .brands__swiper {
     height: 154px;
     position: relative;
     box-sizing: border-box;
-    /* width: 100%; */
+    width: 100%;
     overflow: hidden;
     padding-top: 16px;
 }
@@ -143,8 +137,16 @@ a {
 }
 
 @media(min-width: 768px) {
+    .brands{
+        display:flex;
+    }
+    .brands__container{
+        min-width: 768px;
+        margin: 0 auto;
+    }
     .brands__title {
         height: 56px;
+        
     }
 
     .title__text {
@@ -222,6 +224,9 @@ a {
 
 
 @media(min-width: 1120px) {
+    .brands__container{
+        min-width:1120px;
+    }
 
     .title__text {
         padding: 16px 0 0 32px;
