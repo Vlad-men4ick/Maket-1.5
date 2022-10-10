@@ -49,18 +49,15 @@ window.addEventListener('resize', () => {
 });
 
 const brandsSwiper = document.querySelector('.brands__swiper');
-const showAll = document.querySelector('.show-all__link');
-const arry = document.querySelector('.show-all__link:before');
+const showAll = document.querySelector('.show-all');
+const arry = document.querySelector('.show-all:before');
 showAll.addEventListener('click', function(){
     brandsSwiper.classList.toggle('brands__swiper-show-all');
-    showAll.classList.toggle('show-all__link-rotate');
+    showAll.classList.toggle('show-all-rotate');
 
-    if(showAll.textContent === 'Показать все'){
-        showAll.textContent = 'Скрыть';
-    } else {
-        showAll.textContent = 'Показать все';
-}
-
+		if(showAll.classList.contains('show-all-rotate')){
+			showAll.textContent = 'Скрыть';
+		} else {
+			showAll.textContent = 'Показать все';
+			}
 });
-
-
